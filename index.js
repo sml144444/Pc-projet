@@ -1,3 +1,4 @@
+// when respesive add menu vertical
 document.addEventListener("DOMContentLoaded", function () {
     var incon = document.getElementById("fa-bars");
     var vertical = document.getElementById("vertical");
@@ -104,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-// loadinding
+// loaded
 window.addEventListener('load', function() {
   console.log('Page fully loaded');
   document.getElementById('loader').style.display = 'none';

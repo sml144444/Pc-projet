@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c2a046223c.js" crossorigin="anonymous"></script>
+  <script src="https://unicornicons.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+  <link rel="stylesheet" href="produit.css">
+  <title>SML</title>
+</head>
+
+<body>
+  <!-- loader -->
+  <div id="loader">
+    <div class="spinner center">
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+      <div class="spinner-blade"></div>
+    </div>
+  </div>
+
+  <div id="contentt" style="display:none;">
+    <header id="header">
+      <nav>
+        <i class="fa-solid fa-bars" id="fa-bars"></i>
+        <a href="#"><img src="../images/LogoSample_ByTailorBrands.jpg" alt="" class="logo_sml"></a>
+        <a href="../index.html" class="a">Home</a>
+        <a href="produit.html" class="a">Graphics Cards</a>
+        <a href="drag.html" class="a">Grip and Game</a>
+        <a href="ass.html" class="a">ASSASSIN'S CREED® SHADOWS</a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </nav>
+    </header>
+
+    <!-- vertical respensive -->
+    <div class="menu-vertical" id="vertical">
+      <a href="../index.html" class="aa">Home</a>
+      <a href="produit.html" class="aa">Produits</a>
+      <a href="drag.html" class="aa">Grip and Game</a>
+      <a href="ass.html" class="aa">ASSASSIN'S CREED® SHADOWS</a>
+    </div>
+
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="produit.html">
+            <picture>
+              <source media="(max-width:750px)" srcset="../images/m4.jpeg">
+              </source>
+              <img src="../images/banner_1738078242ee33fcb8b478af079bfe986bc6c8438b.jpeg" alt="New York" class="d-block"
+                style="width:100%">
+            </picture>
+          </a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="drag.html">
+            <picture>
+              <source media="(max-width:750px)" srcset="../images/m1.jpeg">
+              </source>
+              <img src="../images/banner_1733461659a45f5047c9b7bca1b54f5458cf3fe02a.jpeg" alt="Chicago" class="d-block"
+                style="width:100%">
+            </picture>
+          </a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="ass.html">
+            <picture>
+              <source media="(max-width:750px)" srcset="../images/as.1.png">
+              </source>
+              <img src="../images/as.2.png" alt="New York" class="d-block" style="width:100%">
+            </picture>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+
+
+
+
+    <!--head cart graf  -->
+
+    <div class="containte">
+      <h3 class="head-produits">Graphics Cards</h3>
+
+      <div class="main-produits">
+        <div class="left-produits">
+          <div class="respen" onclick="toggleAdvancedSearch()">
+            <i class="fa-solid fa-bars" style="color: #fff; margin: 5 10 0 10;"></i> Advanced search
+          </div>
+          <div class="filter-section" id="filterSection">
+            <h5 onclick="toggleMemoryFilter()"
+              style="cursor: pointer; padding: 0 10px; display: flex; justify-content: space-around;">
+              Memory <i id="memory-arrow" class="fa fa-chevron-down"></i>
+            </h5>
+            <div id="memory-filter" class="filter-content">
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="32">
+                <label>32 Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="24">
+                <label>24 Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="16">
+                <label>16
+                  Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="12">
+                <label>12 Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="8">
+                <label>8 Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="6">
+                <label>6 Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="4">
+                <label>4 Go</label>
+              </div>
+              <div class="form-check"><input class="form-check-input memory-filter" type="checkbox" value="2">
+                <label>2 Go</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right-produits" id="products-container">
+          <!-- المنتجات ستظهر هنا -->
+        </div>
+      </div>
+
+      <!-- أزرار الترقيم -->
+      <div class="pagination" id="pagination"></div>
+    </div>
+
+  </div>
+
+
+
+  <script src="../index.js"></script>
+  <script>
+    const products = [
+      { name: "GeForce RTX™ 4070 Ti SUPER 16G GAMING SLIM STALKER 2 EDITION ", price: "700$", image: "../images/G10.png", memory: "16" },
+      { name: "GeForce RTX™ 3090 Ti SUPRIM SE 24G", price: "450$", image: "../images/G11.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 SUPRIM 24G", price: "250$", image: "../images/G12.png", memory: "24" },
+      { name: "GeForce RTX™ 5070 Ti 16G GAMING TRIO OC", price: "200$", image: "../images/G13.png", memory: "16" },
+      { name: "GeForce RTX™ 5060 8G GAMING OC", price: "600$", image: "../images/G14.png", memory: "16" },
+      { name: "GeForce RTX™ 5060 8G GAMING", price: "400$", image: "../images/G15.png", memory: "8" },
+      { name: "GeForce RTX™ 5060 8G GAMING TRIO WHITE", price: "900$", image: "../images/G16.png", memory: "8" },
+      { name: "GeForce RTX™ 5060 8G GAMING TRIO", price: "300$", image: "../images/G17.png", memory: "8" },
+      { name: "GeForce RTX™ 5050 8G GAMING OC", price: "180$", image: "../images/G18.png", memory: "8" },
+      { name: "GeForce RTX™ 5050 8G GAMING", price: "700$", image: "../images/G19.png", memory: "8" },
+      { name: "GeForce RTX™ 5070 Ti 16G GAMING TRIO OC WHITE", price: "700$", image: "../images/G20.png", memory: "16" },
+      { name: "GeForce RTX™ 5060 Ti 8G CYCLONE OC", price: "700$", image: "../images/G21.png", memory: "8" },
+      { name: "GeForce RTX™ 4090 SUPRIM 24G", price: "300$", image: "../images/aplxclls.png", memory: "24" },
+      { name: "GeForce RTX™ 4080 16GB SUPRIM X", price: "450$", image: "../images/aplxclls.png", memory: "16" },
+      { name: "GeForce RTX™ 5090 32G SUPRIM LIQUID OC", price: "250$", image: "../images/Geforce.png", memory: "32" },
+      { name: "GeForce RTX™ 5090 32G SUPRIM SOC", price: "200$", image: "../images/Geforce2.png", memory: "32" },
+      { name: "GeForce RTX™ 5090 32G SUPRIM OC", price: "600$", image: "../images/Geforce2.png", memory: "32" },
+      { name: "GeForce RTX™ 5090 32G SUPRIM LIQUID SOC", price: "400$", image: "../images/Geforce.png", memory: "32" },
+      { name: "GeForce RTX™ 5080 16G SUPRIM SOC", price: "900$", image: "../images/Geforce2.png", memory: "16" },
+      { name: "GeForce RTX™ 5080 16G SUPRIM LIQUID SOC", price: "300$", image: "../images/Geforce.png", memory: "16" },
+      { name: "GeForce RTX™ 5080 16G SUPRIM LIQUID OC", price: "180$", image: "../images/Geforce.png", memory: "16" },
+      { name: "GeForce RTX™ 4090 SUPRIM X 24G", price: "700$", image: "../images/G30.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 VENTUS 3X 24G OC", price: "700$", image: "../images/G31.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 GAMING X SLIM 24G", price: "700$", image: "../images/G32.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 GAMING SLIM 24G", price: "700$", image: "../images/G37.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 GAMING X TRIO 24G", price: "700$", image: "../images/G33.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 SUPRIM LIQUID X 24G", price: "700$", image: "../images/G34.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 GAMING TRIO 24G", price: "700$", image: "../images/G35.png", memory: "24" },
+      { name: "GeForce RTX™ 4090 SUPRIM LIQUID 24G", price: "700$", image: "../images/G36.png", memory: "24" },
+      { name: "GeForce RTX™ 4070 SUPER 12G GAMING X SLIM MLG", price: "700$", image: "../images/G40.png", memory: "12" },
+      { name: "GeForce RTX™ 4070 Ti SUPER 16G VENTUS 2X OC", price: "700$", image: "../images/G41.png", memory: "16" },
+      { name: "GeForce RTX™ 4070 SUPER 12G VENTUS 3X OC", price: "700$", image: "../images/G42.png", memory: "12" },
+      { name: "GeForce RTX™ 4070 SUPER 12G GAMING SLIM World of Warcraft® EDITION", price: "700$", image: "../images/G43.png", memory: "12" },
+      { name: "GeForce RTX™ 4070 VENTUS 3X E1 12G OC", price: "700$", image: "../images/G44.png", memory: "12" },
+      { name: "GeForce RTX™ 4070 Ti VENTUS 3X E1 12G", price: "700$", image: "../images/G45.png", memory: "12" },
+      { name: "GeForce RTX™ 4060 GAMING X 8G MLG", price: "700$", image: "../images/G50.png", memory: "8" },
+      { name: "GeForce RTX™ 4060 GAMING 8G MLG", price: "700$", image: "../images/G51.png", memory: "8" },
+      { name: "GeForce RTX™ 4060 Ti GAMING X 16G", price: "700$", image: "../images/G52.png", memory: "16" },
+      { name: "GeForce RTX™ 4060 GAMING 8G", price: "700$", image: "../images/G53.png", memory: "8" },
+      { name: "GeForce RTX™ 4060 GAMING X 8G", price: "700$", image: "../images/G54.png", memory: "8" },
+      { name: "GeForce RTX™ 4060 AERO ITX 8G", price: "700$", image: "../images/G55.png", memory: "8" },
+      { name: "GeForce RTX™ 4060 AERO ITX 8G OC", price: "700$", image: "../images/G56.png", memory: "8" },
+      { name: "GeForce RTX™ 3080 Ti GAMING TRIO 12G", price: "700$", image: "../images/G57.png", memory: "12" },
+      { name: "GeForce RTX™ 3080 Ti VENTUS 3X 12G OC", price: "700$", image: "../images/G58.png", memory: "12" },
+      { name: "GeForce RTX™ 3080 Ti VENTUS 3X 12G", price: "700$", image: "../images/G59.png", memory: "12" },
+      { name: "GeForce RTX™ 3090 VENTUS 3X 24G OC", price: "700$", image: "../images/G60.png", memory: "24" },
+      { name: "GeForce RTX™ 3090 VENTUS 3X 24G", price: "700$", image: "../images/G61.png", memory: "24" },
+      { name: "GeForce RTX™ 3090 Ti SUPRIM X 24G", price: "700$", image: "../images/G62.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 Ti SUPRIM X 8G", price: "700$", image: "../images/G63.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 Ti SUPRIM 8G", price: "700$", image: "../images/G64.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 GAMING X TRIO", price: "700$", image: "../images/G65.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 GAMING Z TRIO", price: "700$", image: "../images/G66.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 GAMING TRIO PLUS", price: "700$", image: "../images/G67.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 GAMING TRIO", price: "700$", image: "../images/G68.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 TWIN FAN 8G OC LHR", price: "700$", image: "../images/G69.png", memory: "8" },
+      { name: "GeForce RTX™ 3070 VENTUS 2X OC", price: "700$", image: "../images/G70.png", memory: "8" },
+      { name: "GeForce RTX™ 3050 VENTUS 2X 8G OCV1", price: "700$", image: "../images/G71.png", memory: "8" },
+      { name: "GeForce RTX™ 3050 VENTUS 2X 8G V1", price: "700$", image: "../images/G72.png", memory: "8" },
+      { name: "GeForce RTX™ 3050 VENTUS 2X XS 8G", price: "700$", image: "../images/G73.png", memory: "6" },
+      { name: "GeForce RTX™ 3050 GAMING 6G", price: "700$", image: "../images/G74.png", memory: "6" },
+      { name: "GeForce RTX™ 3050 GAMING X 8G", price: "700$", image: "../images/G75.png", memory: "8" },
+      { name: "GeForce RTX™ 3050 GAMING 8G", price: "700$", image: "../images/G76.png", memory: "6" },
+      { name: "GeForce RTX 2080 Ti VENTUS GP OC", price: "700$", image: "../images/GG1.png", memory: "8" },
+      { name: "GeForce RTX 2080 Ti GAMING Z TRIO", price: "700$", image: "../images/GG2.png", memory: "8" },
+      { name: "GeForce RTX 2070 TRI FROZR", price: "700$", image: "../images/GG3.png", memory: "8" },
+      { name: "GeForce RTX 2080 SUPER™ VENTUS XS OC", price: "700$", image: "../images/GG4.png", memory: "8" },
+      { name: "GeForce RTX 2080 SUPER™ VENTUS XS", price: "700$", image: "../images/GG5.png", memory: "8" },
+      { name: "GeForce RTX 2070 SUPER™ ARMOR", price: "700$", image: "../images/GG6.png", memory: "8" },
+      { name: "GeForce RTX 2070 SUPER™ ARMOR OC", price: "700$", image: "../images/GG7.png", memory: "8" },
+      { name: "GeForce RTX 2080 SUPER SEA HAWK EK X", price: "700$", image: "../images/GG8.png", memory: "8" },
+      { name: "GeForce RTX 2070 GAMING GP", price: "700$", image: "../images/GG9.png", memory: "6" },
+      { name: "GeForce RTX 2070 SUPER™ GAMING", price: "700$", image: "../images/GG10.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER VENTUS", price: "700$", image: "../images/GG11.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER™ VENTUS XS OC", price: "700$", image: "../images/GG12.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER™ VENTUS XS", price: "700$", image: "../images/GG13.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER™ GAMING X", price: "700$", image: "../images/GG14.png", memory: "4" },
+      { name: "GeForce GTX 1660 SUPER™ GAMING", price: "700$", image: "../images/GG15.png", memory: "4" },
+      { name: "GeForce GTX 1660 Ti VENTUS XS 6G V1", price: "700$", image: "../images/GG16.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER VENTUS OC", price: "700$", image: "../images/GG17.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER AERO ITX OCV1", price: "700$", image: "../images/GG18.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER AERO ITX V1", price: "700$", image: "../images/GG19.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER™ AERO ITX OC", price: "700$", image: "../images/GG20.png", memory: "6" },
+      { name: "GeForce GTX 1660 SUPER™ AERO ITX", price: "700$", image: "../images/GG21.png", memory: "8" },
+      { name: "GeForce GTX 1070 GAMING X 8G", price: "700$", image: "../images/GG22.png", memory: "8" },
+      { name: "GeForce® GT 1030 4GHD4 LP OC", price: "700$", image: "../images/GG23.png", memory: "4" },
+      { name: "GeForce® GT 1030 4GD4 LP OC", price: "700$", image: "../images/GG24.png", memory: "4" },
+      { name: "GeForce® GT 1030 AERO ITX 4GD4 OC", price: "700$", image: "../images/GG25.png", memory: "4" },
+      { name: "N730K-2GD3H/LPV1", price: "100$", image: "../images/G222.png", memory: "2" },
+      { name: "Radeon 550 AERO ITX 2G OC", price: "100$", image: "../images/G333.png", memory: "2" },
+      { name: "N730-2GD3V3", price: "100$", image: "../images/G444.png", memory: "2" },
+    ];
+
+    let filteredProducts = [...products]; // في البداية: كل المنتجات
+
+    const productsPerPage = 12;   // nombre produits pour chaque page
+    let currentPage = 1;
+
+    const container = document.getElementById("products-container");
+    const pagination = document.getElementById("pagination");
+
+
+    function displayProducts(page) {
+      container.innerHTML = "";
+      const start = (page - 1) * productsPerPage;
+      const end = start + productsPerPage;
+      const pageItems = filteredProducts.slice(start, end);
+
+      pageItems.forEach(prod => {
+        const div = document.createElement("div");
+        div.classList.add("cart-pro");
+        div.setAttribute("data-memory", prod.memory);
+        div.innerHTML = `
+      <img src="${prod.image}" alt="${prod.name}" width="100%" height="auto">
+      <div><div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+        <label class="form-check-label">Add to cart</label>
+      </div></div>
+      <h4 class="title-produit">${prod.name}</h4>
+      <p>${prod.price}</p>
+    `;
+        container.appendChild(div);
+      });
+    }
+
+
+
+    function setupPagination() {
+      pagination.innerHTML = "";
+      const pageCount = Math.ceil(filteredProducts.length / productsPerPage);
+      for (let i = 1; i <= pageCount; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = i;
+        if (i === currentPage) btn.classList.add("active");
+        btn.addEventListener("click", () => {
+          currentPage = i;
+          displayProducts(currentPage);
+          setupPagination();
+        });
+        pagination.appendChild(btn);
+      }
+    }
+
+
+    // تشغيل أول مرة
+    displayProducts(currentPage);
+    setupPagination();
+
+
+
+
+
+
+    // hide and show the arow chexbox
+    function toggleMemoryFilter() {
+      const content = document.getElementById('memory-filter');
+      const arrow = document.getElementById('memory-arrow');
+      content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+      arrow.classList.toggle('fa-chevron-down');
+      arrow.classList.toggle('fa-chevron-up');
+    }
+
+
+
+
+    const memoryCheckboxes = document.querySelectorAll('.memory-filter');
+    memoryCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+
+    function filterProducts() {
+      const selectedMemories = Array.from(memoryCheckboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+      if (selectedMemories.length === 0) {
+        filteredProducts = [...products]; // بدون فلترة
+      } else {
+        filteredProducts = products.filter(prod =>
+          selectedMemories.includes(prod.memory)
+        );
+      }
+
+      currentPage = 1;
+      displayProducts(currentPage);
+      setupPagination();
+    }
+
+
+
+    // hide and show in respensive the advanced search 
+    function toggleAdvancedSearch() {
+      const filterDiv = document.getElementById('filterSection');
+      filterDiv.style.display = (filterDiv.style.display === 'none' || filterDiv.style.display === '') ? 'block' : 'none';
+    }
+
+  </script>
+
+</body>
+<!--  -->
+
+</html>

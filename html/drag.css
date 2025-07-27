@@ -336,7 +336,7 @@ cursor: pointer;
 @keyframes hhhh1 {
     from{
       opacity: 0;
-      transform: translateY(200px) scale(0.8);
+      transform: translateY(75px) scale(0.8);
     }
     to{
       opacity: 1;
