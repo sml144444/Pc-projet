@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c2a046223c.js" crossorigin="anonymous"></script>
+    <script src="https://unicornicons.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+    <link rel="stylesheet" href="login.css">
+    <title>SML</title>
+</head>
+
+<body>
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner center">
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+        </div>
+    </div>
+
+    <!-- After loading -->
+    <div id="contentt" style="display:none;">
+        <header id="header">
+            <nav>
+                <i class="fa-solid fa-bars" id="fa-bars"></i>
+                <a href="login.html"><img src="../images/LogoSample_ByTailorBrands.jpg" alt="" class="logo_sml"></a>
+                <a href="../index.html" class="a">Home</a>
+                <a href="produit.html" class="a">Graphics Cards</a>
+                <a href="drag.html" class="a">Grip and Game</a>
+                <a href="ass.html" class="a">ASSASSIN'S CREED® SHADOWS</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </nav>
+        </header>
+
+
+        <!-- vertical respensive -->
+        <div class="menu-vertical" id="vertical">
+            <a href="../index.html" class="aa">Home</a>
+            <a href="produit.html" class="aa">Produits</a>
+            <a href="drag.html" class="aa">Grip and Game</a>
+            <a href="ass.html" class="aa">ASSASSIN'S CREED® SHADOWS</a>
+        </div>
+
+
+        <!-- head inscription -->
+        <div class="container">
+            <h1 class="title-h1">Bienvenue au centre des membres de SML</h1>
+            <div class="main">
+                <!-- left content for inscrpt -->
+                <div class="left">
+                    <h4>Vous n'êtes pas encore membre de MSI ?</h4>
+                    <p>Devenez membre de MSI pour suivre les dernières promotions et mises à jour du support.</p>
+                    <a href="sign.html">
+                        <button class="btn-inscription">Créer un compte <i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+
+                    <!-- avantage -->
+                    <h6 style="padding: 10px 0;"><i class="fa-regular fa-circle-user"></i> Avantages de l'adhésion</h6>
+                    <div class="avantage">
+                        <div class="a-left">
+                            <ul>
+                                <li>Enregistrement de la garantie</li>
+                                <li>Des mises à jour exclusives sur les promotions et les événements</li>
+                            </ul>
+                        </div>
+                        <div class="a-right">
+                            <ul>
+                                <li>Un service et un support produit plus rapides</li>
+                                <li>Visualisez vos produits MSI actuellement enregistrés</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- right for login -->
+                <div class="right">
+                    <h4>Se connecter au compte MSI</h4>
+                    <p> Veuillez entrer votre compte enregistré pour vous connecter au centre des membres MSI !</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="usr" placeholder="E-mail">
+                        <p class="Email-err"></p>
+                        <input type="password" class="form-control" id="pwd" placeholder="password">
+                        <p class="Password-err"></p>
+                        <a href="#"><button class="btn-conect">Se connecter</button></a>
+                        <a href="#" class="forgot" class="text-primary" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Mot de passe oublié ?</a>
+
+
+                        <!-- Bootstrap Modal -->
+                        <div class="modal fade" id="forgotPasswordModal" tabindex="-1"
+                            aria-labelledby="forgotPasswordLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="forgotPasswordLabel" style="color: black;">Forgot your password?</h5>
+                                        <!-- Close button (X) -->
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <p>
+                                            Enter your email address below. If it matches an existing account,
+                                            we will send you a link to reset your password.
+                                        </p>
+
+                                        <!-- Forgot Password Form -->
+                                        <form>
+                                            <!-- Email Input -->
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label" style="color: black;">E-mail</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="example@domain.com" required>
+                                                <!-- Validation error message -->
+                                                <div class="invalid-feedback">Please enter a valid email address</div>
+                                            </div>
+
+                                            <!-- Submit Button -->
+                                            <button type="submit" class="btn btn-primary w-100" style="background-color: #c00000;">
+                                                RESET PASSWORD
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- social media -->
+            <ul class="wrapper">
+                <a href="https://web.facebook.com/MSIGaming/?_rdc=1&_rdr#" target="_blank">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                            </path>
+                        </svg>
+                    </li>
+                </a>
+                <a href="https://www.instagram.com/msigaming/" target="_blank">
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </path>
+                        </svg>
+                    </li>
+                </a>
+                <a href="https://www.youtube.com/channel/UCezxSW8kVueIU0pr_rukbYA" target="_blank">
+                    <li class="icon youtube">
+                        <span class="tooltip">YouTube</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512"
+                            fill="currentColor">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.197-48.434-48.511C460.43 64 288 64 288 64S115.57 64 74.779 75.572c-23.647 6.314-42.153 24.861-48.434 48.511C16 165.03 16 256.004 16 256.004s0 90.975 10.345 131.921c6.281 23.65 24.787 42.197 48.434 48.511C115.57 448 288 448 288 448s172.43 0 213.221-11.572c23.647-6.314 42.153-24.861 48.434-48.511C560 346.979 560 256.004 560 256.004s0-90.975-10.345-131.921zM232 338.497v-164.99l142.743 82.495L232 338.497z" />
+                        </svg>
+                    </li>
+                </a>
+
+                <a href="https://www.tiktok.com/@msi" target="_blank">
+                    <li class="icon tiktok">
+                        <span class="tooltip">TikTok</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" height="1.4em"
+                            fill="currentColor">
+                            <path
+                                d="M200,88a64,64,0,0,1-32-8V176a64,64,0,1,1-64-64v32a32,32,0,1,0,32,32V24h32a64,64,0,0,0,64,64Z" />
+                        </svg>
+                    </li>
+                </a>
+
+                <a href="https://www.twitch.tv/msigaming" target="_blank">
+                    <li class="icon twitch">
+                        <span class="tooltip">Twitch</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.4em"
+                            fill="currentColor">
+                            <path
+                                d="M80 32L32 96v320h128v64h64l64-64h96l96-96V32H80zm368 224l-64 64h-96l-64 64v-64H112V64h336v192z" />
+                            <rect x="320" y="143" width="32" height="96" />
+                            <rect x="240" y="143" width="32" height="96" />
+                        </svg>
+                    </li>
+                </a>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
